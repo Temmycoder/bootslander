@@ -844,28 +844,28 @@
                     </div>
 
                     <div class="col-md-8 container">
-                      <form method="post" action="#">
+                      <form method="post" action="process.php">
                         <div class="row" data-aos="fade-up" data-aos-duration="1000">
                           <div class="col-6">
-                            <input type="text" placeholder="Your Name" required maxlength="30" minlength="3" class="form-control">
+                            <input type="text" placeholder="First Name" name="first_name" required maxlength="30" minlength="3" class="form-control">
                           </div>
   
                           <div class="col-6">
-                            <input type="email" placeholder="Your Name" required minlength="8" class="form-control">
+                            <input type="text" placeholder="Last Name" name="last_name" minlength="2" class="form-control">
                           </div>
                         </div><br>
 
                         <div data-aos="fade-up" data-aos-duration="1000">
-                          <input type="text" placeholder="Your Name" required class="form-control">
+                          <input type="email" placeholder="Your Email" name="sender_email" class="form-control">
                         </div><br>
 
                         <div data-aos="fade-up" data-aos-duration="1000">
-                          <textarea rows="6" placeholder="Message" class="form-control"></textarea>
+                          <textarea rows="6" placeholder="Message" class="form-control" name="message"></textarea>
                         </div><br>
 
                         <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
-                          <button type="button" style="border-radius: 50px; border: #ffffff;" 
-                          class="text-bg-success pe-4 ps-4 pt-2 pb-2">Send Message</button>
+                          <button type="submit" style="border-radius: 50px; border: #ffffff;" 
+                          class="text-bg-success pe-4 ps-4 pt-2 pb-2" name="send">Send Message</button>
                         </div>
                       </form>                      
                     </div>
