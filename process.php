@@ -27,15 +27,12 @@ if ($conn->connect_error) {
 
     if (mysqli_query($conn, $sql)) {
 
-        echo "SUCCESS, new record created successfully";
+        echo "<div class='alert alert-success'>SUCCESS, new record created successfully</div>";
     }
     else{
         echo "ERROR: Could not able to send the message"; 
 
     }
-
-
-
 
  }
 
